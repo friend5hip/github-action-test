@@ -14,6 +14,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: github actions
+      # command name
+      - name: command#1
         # command
-        run: echo "github actions"
+        run: echo "hello world !"
+
+      - name: command#2
+        run: |
+          echo "first command"
+          echo "second command"
