@@ -10,12 +10,12 @@ on:
 jobs:
   build:
     name: test build & deploy
-    # execution environment
+    # operating systems
     runs-on: ubuntu-latest
 
     steps:
       # command name
-      - name: command#1
+      - name: command#1`
         # command
         run: echo "hello world !"
 
@@ -23,3 +23,8 @@ jobs:
         run: |
           echo "first command"
           echo "second command"
+
+      - name: command#3
+        run: |
+          echo $GITHUB.SHA
+          echo $GITHUB.REPOSITORY
