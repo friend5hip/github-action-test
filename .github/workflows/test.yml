@@ -15,7 +15,7 @@ jobs:
 
     steps:
       # command name
-      - name: command#1`
+      - name: command#1
         # command
         run: echo "hello world !"
 
@@ -26,5 +26,5 @@ jobs:
 
       - name: command#3
         run: |
-          echo $GITHUB.SHA
-          echo $GITHUB.REPOSITORY
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
