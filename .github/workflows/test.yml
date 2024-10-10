@@ -3,12 +3,17 @@ name: test deployment
 # event
 on:
   push:
-    branches: ["main"]
-  pull_request:
-    branches: ["main"]
+    branches:
+      - main
 
 # to-do when events occur
 jobs:
   build:
     name: test build & deploy
+    # execution environment
     runs-on: ubuntu-latest
+
+    steps:
+      - name: github actions
+        # command
+        run: echo "github actions"
